@@ -18,8 +18,8 @@
 files: [
   {
 
-    source: "/*.xcstrings"
-    translation: "/{fr}/"
+    source: "/*.xcstrings",
+    translation: "/{fr}/",
 
 
 
