@@ -18,8 +18,8 @@
 files: [
   {
 
-    #source: "**/Localizable/*.xcstrings",
-    #translation: "/Localizable/%locale%/Localizable.xcstrings",
+    source: "/*.xcstrings"
+    translation: "/{fr}/"
 
     #
     # Files or directories for ignore
