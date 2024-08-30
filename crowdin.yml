@@ -19,7 +19,7 @@ files: [
   {
 
     source: "/*.xcstrings",
-    translation: "path/to/translation/fr/",
+    translation: "path/to/translation/%locale%/",
 
 
 
