@@ -17,17 +17,9 @@
 #
 files: [
   {
-    #
-    # Source files filter
-    # e.g. "/resources/en/*.json"
-    #
-    "source": "/resources/en/*.json",
 
-    #
-    # Where translations will be placed
-    # e.g. "/resources/%two_letters_code%/%original_file_name%"
-    #
-    "translation": "/resources/fr/fr.json",
+    source: "/CrowdinPOC/Localizable/*.xcstrings"  # Source path for your Localizable files
+    translation: "/CrowdinPOC/Localizable/%locale%/Localizable.xcstrings" 
 
     #
     # Files or directories for ignore
