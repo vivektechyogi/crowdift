@@ -21,6 +21,8 @@ files: [
     source: "/*.xcstrings"
     translation: "/{fr}/"
 
+
+
     #
     # Files or directories for ignore
     # e.g. ["/**/?.txt", "/**/[0-9].txt", "/**/*\?*.txt"]
