@@ -1,0 +1,30 @@
+name: Upload to Crowdin
+
+on:
+  push:
+    branches:
+      - main  # Adjust to your target branch
+
+jobs:
+  upload-to-crowdin:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'  # Adjust the Node.js version if necessary
+
+    - name: Install Crowdin CLI
+      run: npm install -g @crowdin/cli
+
+    - name: Verify Crowdin CLI installation
+      run: crowdin --version  # Ensure Crowdin CLI is correctly installed
+
+    - name: Upload files to Crowdin
+      run: crowdin upload
+      env:
+        CROWDIN_API_TOKEN: ${{ secrets.CROWDIN_API_TOKEN }}
