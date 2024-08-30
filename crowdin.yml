@@ -18,8 +18,8 @@
 files: [
   {
 
-    source: "/CrowdinPOC/Localizable/*.xcstrings"  # Source path for your Localizable files
-    translation: "/CrowdinPOC/Localizable/%locale%/Localizable.xcstrings" 
+    source: "/CrowdinPOC/Localizable/*.xcstrings" , # Source path for your Localizable files
+    translation: "/CrowdinPOC/Localizable/%locale%/Localizable.xcstrings" ,
 
     #
     # Files or directories for ignore
